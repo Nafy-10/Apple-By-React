@@ -6,7 +6,6 @@ const YoutubeVideos = () => {
 
   useEffect(() => {
     const fetchVideos = async () => {
-      const API_KEY = "AIzaSyBFKlAdIh9yE8m0tIx8Q89Z1PkIE9mvg-A";
       const CHANNEL_ID = "UCE_M8A5yxnLfW0KghEeajjw";
       const MAX_RESULTS = 9;
       const url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=${MAX_RESULTS}`;
